@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Tabela HTML</title>
+</head>
+
+<body>
+   <h3><b>Ficha cadastral</b></h3>	
+ 
+   <form name = "cadastro" action = "processa.php"
+    method = "Post" accept-charset = "UTF-8">
+    Nome: <input type=" name="sobrenome" /><br>
+    RG: <input type=" name="RG" size="13"/>
+    CPF: <input type=" name="CPF" size="13"/><br>
+    Endereço: <input type="test" name="endereco" size="60"/><br>
+    <fieldset>
+      <legend>Sexo</legend>
+      <select name= "sexo" id="sexo">
+      <option value="Masculino" selected>Masculino</option>   
+      <option value="Feminino">Feminino</option>
+      </select>
+      Data Nascimento: <input type=" name="Data de Nascimento" size="8"/> <br>
+      </fieldset>
+    Situação Civil: <br>
+    <input type="radio" name="sexo" value="M"> Solteiro(a)
+    <input type="radio" name="sexo" value="F"> Casado(a)
+    <input type="radio" name="sexo" value="N"> Viúvo(a)<br>
+    <input type="submit" value="Limpar os dados" />
+ </body>
+
+</html>

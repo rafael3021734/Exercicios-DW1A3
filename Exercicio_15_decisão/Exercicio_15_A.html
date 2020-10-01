@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+   function puladinha(){
+ 		document.write("<br>");
+ 		document.write("<br>");
+ }
+   function mostra (frase){
+  		document.write(frase);
+  		puladinha();
+ }
+   
+   var vendas = parseInt(prompt("digite o valor de vendas!"));
+   var despesas = parseInt(prompt("digite o valor de despesas!"));
+
+   if (vendas > despesas){
+      mostra("você lucrou!");
+   }
+   
+   else {
+      mostra ("voce teve prejuízo! ");
+   }
+
+</script>

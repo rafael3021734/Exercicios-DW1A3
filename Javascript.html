@@ -1,0 +1,46 @@
+<meta charset= "UTF-8">
+
+<button>Aperte-me</button>
+<script>
+    
+var button = document.querySelector('button');
+
+button.onclick = function() {
+  var nome = prompt('Qual é o seu nome?');
+  alert('Olá ' + nome + ', é um prazer te ver!');
+}
+</script>
+<input id="nr1" placeholder= "Digite um numero"/>
+<button onclick="verifica()">Digite o primeiro numero</button>
+<br>
+<input id="nr2"/>
+<button onclick="verifica()">Digite o segundo numero</button>
+<script>
+    var segredo = Math.round(Math.random() * 10);
+    var input = document.querySelector("nr1");
+        input.focus();
+
+    function verifica() {
+
+        
+        var result = parseInt(input.value + input.value)
+        document.write("eu acertei: " + result + "%");
+        document.write( "Numero"+result );
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                input.value = "";
+                input.focus();
+
+    }
+
+    var button = document.querySelector("nr1");
+
+    button.onclick = verifica;
+
+</script>

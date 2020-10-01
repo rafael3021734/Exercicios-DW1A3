@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+   function puladinha(){
+ 		document.write("<br>");
+ 		document.write("<br>");
+ }
+   function mostra (frase){
+  		document.write(frase);
+  		puladinha();
+ }
+   
+   var semaforo = prompt("digite a cor do semáforo!");   
+
+   switch (semaforo){
+    case 'vermelho':
+      mostra("Pare!");
+      break;
+
+    case 'amarelo':
+      mostra("Atenção");
+      break;
+
+    case 'verde':
+      mostra("Prossiga");    
+      break;
+   } 
+   
+</script>

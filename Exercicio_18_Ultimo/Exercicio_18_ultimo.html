@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><meta charset= "UTF-8">
+<head>
+    <title>Exercicio_18_Javascrip</title>
+</head>
+<script>
+   function puladinha(){
+ 		document.write("<br>");
+ 		document.write("<br>");
+ }
+   function mostra (frase){
+  		document.write(frase);
+  		puladinha();
+ }
+   
+   var nota1 = parseInt(prompt("digite a primeira nota:"));
+   var nota2 = parseInt(prompt("digite a segunda nota:"));
+   var result = ((nota1 + nota2)/2)
+   if (nota1 > 5){
+      mostra("Voce foi aprovado, pois sua média final é: "+ result);
+   }
+   
+   else {
+      mostra ("Voce foi reprovado, pois sua média final é: "+ result);
+   }
+
+</script>
+</body>
+</html>
